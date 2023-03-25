@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (max-width: 799px) {
+  .menuPc {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .menuPhone {
+    display: none;
+  }
+}
+.menuPc {
+  background-color: black;
+}
+.menuPc .containerMenu {
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.menuPc .containerMenu > a {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.menuPc .containerMenu .nav-pc ul {
+  display: flex;
+}
+.menuPc .containerMenu .nav-pc ul li > a {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.menuPc .containerMenu .nav-pc ul li :hover {
+  color: blue;
+}
+
+.menuPhone {
+  background-color: black;
+}
+.menuPhone .containerPhone {
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.menuPhone .containerPhone > a {
+  color: white;
+  margin-left: 15px;
+}
+.menuPhone .containerPhone .botaoOpen {
+  margin-right: 15px;
+}
+.menuPhone .containerPhone .botaoOpen > img {
+  width: 48px;
+}
+
+.menuExtra {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transition: all 800ms ease;
+}
+.menuExtra .imgClose {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+.menuExtra .imgClose > img {
+  width: 48px;
+}
+.menuExtra .listmenu > nav > ul > li {
+  line-height: 2.8;
+}
+.menuExtra .listmenu > nav > ul > li > a {
+  color: white;
+  font-size: 45px;
+}
+
+.open {
+  left: 0;
+}/*# sourceMappingURL=style.css.map */

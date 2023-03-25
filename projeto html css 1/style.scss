@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (max-width: 799px) { // tela celular
+    .menuPc{
+        display: none;
+    }
+}
+
+@media (min-width: 800px) { // tela pc
+    .menuPhone{
+        display: none;
+    }
+
+}
+
+.menuPc {
+    background-color: black;
+    .containerMenu {
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        >a {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .nav-pc {
+            ul {
+                display: flex;
+                li{
+                    >a{
+                        color: white;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        padding: 15px;
+                    }
+
+                    :hover {
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menuPhone{
+    background-color: black;
+
+    .containerPhone {
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        text-transform: uppercase;
+        font-size: 15px;
+        >a {
+            color: white;
+            margin-left: 15px;
+        }
+
+        .botaoOpen {
+            margin-right: 15px;
+
+            >img {
+                width: 48px;
+            }
+        }
+    }
+}
+
+.menuExtra {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: all 800ms ease;
+    
+    .imgClose {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        >img {
+            width: 48px;
+        }
+    }
+
+    .listmenu { 
+        >nav {
+            >ul {
+                >li{
+                    line-height: 2.8;
+                    >a{
+                        color: white;
+                        font-size: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.open {
+    left: 0;
+}
